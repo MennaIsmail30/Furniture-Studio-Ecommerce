@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.header-container {
+    padding: 34px 70px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.logo {
+    color: #323334;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+}
+
+.header-icons i {
+    font-size: 2.7rem;
+    cursor: pointer;
+    color: #323334;
+    transition: 0.3s;
+}
+
+.header-icons i:hover {
+    color: #f2c94c;
+}
+
+.nav {
+    padding: 38px 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links li a {
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #323334;
+    font-size: 1.6rem;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f2c94c;
+}
+
+#logout-button {
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #323334;
+    font-size: 1.6rem;
+    font-weight: 700;
+    transition: 0.3s;
+    background: none;
+    border: none;
+    font-family: "Roboto", sans-serif;
+}
+
+#logout-button:hover {
+    color: #f2c94c;
+}
+
+.features {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.features i {
+    font-size: 1.8rem;
+    margin-right: 5px;
+    color: #f2c94c;
+}
+
+.features span {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.line {
+    margin: 1px 0;
+    height: 2px;
+    background-color: #323334;
+}
+
+/* Footer Section */
+.footer {
+    background: #323334;
+    padding: 50px 72px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 120px;
+}
+
+.footer-col-1 h3 {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.footer-col-1 p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 40px;
+}
+
+.footer-col-1 address {
+    margin-bottom: 55px;
+}
+
+.footer-col-1 address p {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 137.5% */
+    margin-bottom: 8px;
+}
+
+.footer-col-1 i {
+    color: #fff;
+}
+
+.footer-col-1 div {
+    display: flex;
+    gap: 72px;
+}
+
+.footer-col-repeat h3 {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 34px;
+}
+
+.footer-col-repeat div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col-repeat a {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.footer-col-4 h3 {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 34px;
+}
+
+.blog-date {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.blog-description {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 137.5% */
+    margin-bottom: 10px;
+}
+
+.blog-comments {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 32px;
+}
+
+.footer-col-4 hr {
+    stroke-width: 1px;
+    stroke: rgba(255, 255, 255, 0.5);
+    margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1300px) {
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo {
+        font-size: 2.2rem;
+    }
+
+    .header-icons i {
+        font-size: 1.8rem;
+    }
+}
